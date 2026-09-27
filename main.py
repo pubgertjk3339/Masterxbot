@@ -3,7 +3,7 @@ import telebot
 from flask import Flask, request
 
 # Гирифтани Токени бот аз Render Environment
-TOKEN = os.environ.get("8953447600:AAFQ122JJY2WMNUQIGQuaFUZ8E3NwXFT4f4")
+TOKEN = os.environ.get("TOKEN", "YOUR_BOT_TOKEN_HERE")
 bot = telebot.TeleBot(TOKEN)
 app = Flask(__name__)
 
